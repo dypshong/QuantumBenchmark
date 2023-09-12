@@ -43,7 +43,7 @@ class RandomQASMInstruction:
         qubit2 = qubit1
         while qubit2 == qubit1:
             qubit2 = random.randint(0, num_qubits-1)
-        return f"CX q[{qubit1}] q[{qubit2}];";
+        return f"CX q[{qubit1}], q[{qubit2}];";
 
     @staticmethod
     def IF(num_qubits):
